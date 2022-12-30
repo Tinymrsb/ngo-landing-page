@@ -27,6 +27,11 @@
   --accent-color: #f6b269;
   --button-color: #67b6d7;
 }
+ @media only screen and (max-width: 750px) {
+       .donate img{
+        visibility: hidden;
+       }
+      }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&family=Rubik+Mono+One&display=swap');
 
@@ -146,6 +151,18 @@ font-family: 'Rubik Mono One', sans-serif;
 
 .person-icon {
   height: 12rem;
+}
+
+.person-icon1 {
+  display:block;
+  float:right;
+  height: 12rem;
+ }
+
+ .person-icon2 {
+  display:block;
+  float:left;
+  height: 12rem;
  }
 
 .fact {
@@ -216,7 +233,7 @@ font-family: 'Rubik Mono One', sans-serif;
   </head>
   <body>
     <!-- main container open -->
-  <div class="container">
+  <!-- <div class="container"> -->
       <!-- main container open -->
       <!-- nav open -->
         <nav class="navbar navbar-dark fixed-top">
@@ -242,14 +259,14 @@ font-family: 'Rubik Mono One', sans-serif;
                     <a class="nav-link" href="#donate">Donate Books</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="https://github.com/Tinymrsb" target="_blank">Like this page?</a>
+                    <a class="nav-link" href="https://github.com/Tinymrsb" target="_blank" title="Star this repo on GitHub!">Like this page?</a>
                   </li>
                 </ul>
               </div>
             </div>  
           </div>
         </nav>
-      </div>
+      
       <!-- nav close-->
       <!-- hero open -->
       <div class="row hero">
@@ -259,48 +276,44 @@ font-family: 'Rubik Mono One', sans-serif;
       <!-- hero close -->
       <div class="row pt-3">
         <div class="col-12">
-          <!-- <p id="demo"></p> -->
-
-
           <h4>
-  <p class="typewrite" data-period="2000" data-type='[ "Hi, Im Brittany.", "Welcome to my SheCodes.io NGO Landing Page Challenge." ]'>
-    <span class="wrap"></span>
-  </p>
-</h4>
-
-
+          <p class="typewrite" data-period="2000" data-type='[ "Hi, Im Brittany.", "Welcome to my SheCodes.io NGO Landing Page Challenge." ]'>
+            <span class="wrap"></span>
+          </p>
+          </h4>
         </div>
        
       </div>
       <!-- about open -->
       <div class="about pt-5" id="about">
-      <div class="row about-upper">
-        <div class="col-4">
-          <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/059/842/original/2203_w048_n004_9b_p1_9.jpg?1671581272" alt="image" class="person-icon">
-        </div>
-        <div class="col-8">
-          <h3>DO YOU HAVE BOOKS LAYING AROUND WAITING TO BE READ?</h3>
-          <p>There are several ways that you can use books that you have at home to help others.</p>
-        </div>
-        <div class="row about-lower" >
+       <div class="row about-upper">
+          <div class="col-4">
+           <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/059/842/original/2203_w048_n004_9b_p1_9.jpg?1671581272" alt="image" class="person-icon1">
+          </div>
           <div class="col-8">
-            <h3>BOOKS ARE MAGIC</h3>
-          <p>With a book you can travel in its pages to lands around the world, you can learn new things and discover the mysteries of the world. By giving the gift of literature, you can open up new worlds and opportunities for those who may not have had them before. </p>
+            <h3>DO YOU HAVE BOOKS LAYING AROUND WAITING TO BE READ?</h3>
+            <p>There are several ways that you can use books that you have at home to help others.</p>
           </div>
-          <div class="col-4"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/059/844/original/2203_w048_n004_9b_p1_9_%281%29.jpg?1671581770" alt="" class="person-icon">
-          </div>
+          <div class="row about-lower" >
+            <div class="col-8">
+              <h3>BOOKS ARE MAGIC</h3>
+              <p>With a book you can travel in its pages to lands around the world, you can learn new things and discover the mysteries of the world. By giving the gift of literature, you can open up new worlds and opportunities for those who may not have had them before. </p>
+            </div>
+            <div class="col-4">
+              <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/059/844/original/2203_w048_n004_9b_p1_9_%281%29.jpg?1671581770" alt="" class="person-icon2">
+            </div>
+         </div>
         </div>
-      </div>
       </div>
       <!-- about close -->
 
 
-<!-- learn open -->
+      <!-- learn open -->
       <div class="row learn pt-5" id="learn">
         <div class="col-6">
           <h3>TIPS FOR DONATING</h3>
             <p>
-            <ul>
+             <ul>
               <li>Research potential organizations or institutions to donate to: Consider donating to libraries, schools, non-profit organizations, or charities that support literacy and education.</li>
               <br />
               <li>Check the condition of the books: Donate books that are in good condition, with minimal damage or wear. Books with torn or missing pages, water damage, or strong odors may not be accepted by organizations.</li>
@@ -328,39 +341,39 @@ font-family: 'Rubik Mono One', sans-serif;
           <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/059/953/original/8576.jpg?1671674838" alt="" class="person-icon">
           <h4>Reader to Reader, INC</h4>
           <button type="button" class="css-button">
-	<span class="css-button-icon">
-		<i class="fa fa-question-circle"></i>
-	</span>
-	<span class="css-button-text">
+	   <span class="css-button-icon">
+		  <i class="fa fa-question-circle"></i>
+	   </span>
+	   <span class="css-button-text">
 			<span><a href="https://readertoreader.org/donationprograms" target="_blank" title="readertoreader.org">Learn More</a></span>
-	</span>
-</button>
+  	  </span>
+     </button>
           
         </div>
         <div class="col-4" id="learn-button">
           <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/059/953/original/8576.jpg?1671674838" alt="" class="person-icon">
           <h4>Kids Need To Read</h4>
            <button type="button" class="css-button">
-	<span class="css-button-icon">
-		<i class="fa fa-question-circle"></i>
-	</span>
-	<span class="css-button-text">
-		<span><a href="https://www.kidsneedtoread.org/give_books.html" target="_blank" title="kidsneedtoread.org">Learn More</a></span>
-	</span>
-</button>
+	    <span class="css-button-icon">
+		  <i class="fa fa-question-circle"></i>
+	    </span>
+	   <span class="css-button-text">
+		  <span><a href="https://www.kidsneedtoread.org/give_books.html" target="_blank" title="kidsneedtoread.org">Learn More</a></span>
+	    </span>
+     </button>
 
         </div>
         <div class="col-4" id="learn-button">
           <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/059/953/original/8576.jpg?1671674838" alt="" class="person-icon">
           <h4>Little Free Library</h4>
            <button type="button" class="css-button">
-	<span class="css-button-icon">
-		<i class="fa fa-question-circle"></i>
-	</span>
-	<span class="css-button-text">
-		<span><a href="https://littlefreelibrary.org/map/" target="_blank" title="littlefreelibrary.org">Learn More</a></span>
-	</span>
-</button>
+	    <span class="css-button-icon">
+		  <i class="fa fa-question-circle"></i>
+	    </span>
+	   <span class="css-button-text">
+		  <span><a href="https://littlefreelibrary.org/map/" target="_blank" title="littlefreelibrary.org">Learn More</a></span>
+	   </span>
+     </button>
         </div>
         <div class="col-3"></div>
         <div class="col-6 pt-5">
@@ -376,23 +389,25 @@ font-family: 'Rubik Mono One', sans-serif;
         <div class="col-12 closing pt-3">
           <footer>
              <p class="typewrite" data-period="2000" data-type='[ "YOUR BOOKS CAN MAKE A DIFFERENCE TODAY" ]'>
-    <span class="wrap"></span>
-  </p>
+     <span class="wrap"></span>
+      </p>
             <p class="reference-link"><a
               href="https://www.freepik.com/free-vector/young-people-students-reading-books_23617166.htm#page=2&query=GROUP&position=48&from_view=author#position=48&page=2&query=GROUP"
               class="reference-link" target="_blank" title="Freepik">Images by upklyak</a>
             on Freepik | Some text created with <a
               href="https://openai.com/blog/chatgpt/"
               class="reference-link" target="_blank" title="ChatGPT"> ChatGPT</a> AI</p>
-              <p><a href="https://github.com/Tinymrsb/ngo-landing-page">GitHub</a>
+              <p><a href="https://github.com/Tinymrsb/ngo-landing-page" target="_blank" title="GitHub Repository">GitHub</a>
            </p>
           </footer>
         </div>
       </div>
       <!-- main container close -->
-    </div>
+      </div>
+      </div>
+<!-- </div> -->
     <!-- main container close -->
-    <!-- JavaScript Bundle with Popper -->
+    <!-- JavaScript for Bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
