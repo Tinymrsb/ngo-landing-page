@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+<!-- fontawesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <meta
+      name="description"
+      content="Saving books from the landfill and donating them can help reduce waste and provide access to knowledge and education for others."
+    />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <style>:root {
+  --primary-color: #8a558d;
+  --accent-color: #f6b269;
+  --button-color: #67b6d7;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&family=Rubik+Mono+One&display=swap');
+
+/* font-family: 'Roboto Mono', monospace;
+font-family: 'Rubik Mono One', sans-serif; */
+
+.css-button {
+	color: #ffffff;
+	font-size: 16px;
+	border-radius: 5px;
+	border: solid 1px #3866a3;
+	/* text-shadow: 1px 1px 0px #251426; */
+	box-shadow: inset -1px 1px 2px 0px #BBDAF7;
+	text-decoration: none;
+	cursor: pointer;
+	overflow: hidden;
+	font-family: Arial;
+	background: linear-gradient(158deg, #67b5d7 10%, #7cabd6 100%);
+	display:inline-flex;
+	padding: 0;
+}
+
+.css-button:hover {
+	background: linear-gradient(158deg, #7cabd6 10%, #67b5d7 100%);
+}
+.css-button-text {
+	position: relative;
+	padding: 10px 18px;
+}
+.css-button-icon {
+	border-right: 1px solid #ffffff29;
+	box-shadow: inset rgb(0 0 0 / 14%) -1px 0 0;
+	padding: 10px 10px;
+}
+
+#learn-button {
+  text-align: center;
+}
+
+a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: overline;
+  color: #f6b269;
+}
+
+.citation-link {
+  background-color: var(--primary-color);
+}
+
+h3 {
+  color: var(--primary-color);
+  font-family: 'Rubik Mono One', sans-serif;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+h4 {
+  color: var(--primary-color);
+  font-weight: bolder;
+  font-size: 1rem;
+  text-align: center;
+}
+
+p, ul {
+  text-align: center;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: bolder;
+
+}
+
+.closing {
+  background-color: var(--primary-color);
+  height: 8rem;
+  color: white;
+}
+
+.navbar {
+  background-color: var(--primary-color);
+}
+.navbar-brand {
+  font-family: 'Rubik Mono One', sans-serif;
+}
+
+.navbar-brand:hover {
+font-family: 'Rubik Mono One', sans-serif;
+}
+
+.offcanvas {
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 1.4rem;
+}
+
+.hero img {
+  padding-top: 3rem;
+  width: 100%;
+}
+
+.footer-img {
+  padding-top: 3rem;
+  width: 100%;
+}
+
+.about, .learn, .donate{
+  border-bottom: .5rem solid var(--accent-color);
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.about-lower, .about-upper {
+  margin: 2rem 4rem;
+}
+
+.person-icon {
+  height: 12rem;
+ }
+
+.fact {
+  border-left: .5rem solid var(--accent-color);
+}
+
+.reference-link {
+  font-size: .8rem;
+  text-decoration: none;
+}
+
+.fade-in {
+  animation: fadeIn ease 7s;
+  -webkit-animation: fadeIn ease 7s;
+  -moz-animation: fadeIn ease 7s;
+  -o-animation: fadeIn ease 7s;
+  -ms-animation: fadeIn ease 7s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+}
+}
+
+
+
+</style>
+    <title>YOUR BOOKS MAKE A DIFFERENCE</title>
+  </head>
+  <body>
+    <!-- main container open -->
+  <div class="container">
+      <!-- main container open -->
+      <!-- nav open -->
+        <nav class="navbar navbar-dark fixed-top">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">YOUR BOOKS MAKE A DIFFERENCE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">YOUR BOOKS MAKE A DIFFERENCE</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#learn">Learn More</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#donate">Donate Books</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/Tinymrsb" target="_blank">Like this page?</a>
+                  </li>
+                </ul>
+              </div>
+            </div>  
+          </div>
+        </nav>
+      </div>
+      <!-- nav close-->
+      <!-- hero open -->
+      <div class="row hero">
+        <div class="col-12">
+          <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/059/840/original/2112.w037.n003.99B.p1.99.jpg?1671580679" alt="image of students" class="fade-in"></div>
+      </div>
+      <!-- hero close -->
+      <div class="row pt-3">
+        <div class="col-12">
+          <!-- <p id="demo"></p> -->
+
+
+          <h4>
+  <p class="typewrite" data-period="2000" data-type='[ "Hi, Im Brittany.", "Welcome to my SheCodes.io NGO Landing Page Challenge." ]'>
+    <span class="wrap"></span>
+  </p>
+</h4>
+
+
+        </div>
+       
+      </div>
+      <!-- about open -->
+      <div class="about pt-5" id="about">
+      <div class="row about-upper">
+        <div class="col-4">
+          <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/059/842/original/2203_w048_n004_9b_p1_9.jpg?1671581272" alt="image" class="person-icon">
+        </div>
+        <div class="col-8">
+          <h3>DO YOU HAVE BOOKS LAYING AROUND WAITING TO BE READ?</h3>
+          <p>There are several ways that you can use books that you have at home to help others.</p>
+        </div>
+        <div class="row about-lower" >
+          <div class="col-8">
+            <h3>BOOKS ARE MAGIC</h3>
+          <p>With a book you can travel in its pages to lands around the world, you can learn new things and discover the mysteries of the world. By giving the gift of literature, you can open up new worlds and opportunities for those who may not have had them before. </p>
+          </div>
+          <div class="col-4"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/059/844/original/2203_w048_n004_9b_p1_9_%281%29.jpg?1671581770" alt="" class="person-icon">
+          </div>
+        </div>
+      </div>
+      </div>
+      <!-- about close -->
+
+
+<!-- learn open -->
+      <div class="row learn pt-5" id="learn">
+        <div class="col-6">
+          <h3>TIPS FOR DONATING</h3>
+            <p>
+            <ul>
+              <li>Research potential organizations or institutions to donate to: Consider donating to libraries, schools, non-profit organizations, or charities that support literacy and education.</li>
+              <br />
+              <li>Check the condition of the books: Donate books that are in good condition, with minimal damage or wear. Books with torn or missing pages, water damage, or strong odors may not be accepted by organizations.</li>
+              <br />
+              <li>Consider the types of books you are donating: Consider the needs and interests of the organization or institution you are donating to. Donating books that are relevant or in demand may be more helpful and appreciated.</li>
+              </ul>
+            </p>
+        </div>
+        <div class="col-6 fact">
+          <!-- <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/059/854/original/2203_w048_n004_9b_p1_9_%282%29.jpg?1671583410" alt="image" class="person-icon learn-icon"> -->
+          <h3>DID YOU KNOW TONS AND TONS OF BOOKS ARE THROWN AWAY EACH YEAR.</h3>
+          <br />
+          <p>"An estimated 640,000 tons of books are sent to the landfill annually. At an assumed average weight of 4 pounds each5 that equates to approximately 320 million books that are discarded each year and not being recycled."</p>
+        <br />
+          <a href="https://www.nwf.org/~/media/PDFs/Eco-schools/McGraw%20Hill/12-4-12%20A%20Research%20Study%20on%20Textbook%20Recycling.ashx"  target="_blank" title="citation"><p class="citation-link">- From "Research Study on Textbook Recycling Nov 2012"</p></a>
+        </div>
+      </div>
+      <!-- learn close -->
+      <!-- donate open -->
+      <div class="row donate pt-5" id="donate">
+        <div class="col-12">
+          <h3>MY TOP 3 ORGANIZATIONS</h3>
+        </div>
+        <div class="col-4" id="learn-button">
+          <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/059/953/original/8576.jpg?1671674838" alt="" class="person-icon">
+          <h4>Reader to Reader, INC</h4>
+          <button type="button" class="css-button">
+	<span class="css-button-icon">
+		<i class="fa fa-question-circle"></i>
+	</span>
+	<span class="css-button-text">
+			<span><a href="https://readertoreader.org/donationprograms" target="_blank" title="readertoreader.org">Learn More</a></span>
+	</span>
+</button>
+          
+        </div>
+        <div class="col-4" id="learn-button">
+          <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/059/953/original/8576.jpg?1671674838" alt="" class="person-icon">
+          <h4>Reader to Reader, INC</h4>
+           <button type="button" class="css-button">
+	<span class="css-button-icon">
+		<i class="fa fa-question-circle"></i>
+	</span>
+	<span class="css-button-text">
+		<span><a href="https://www.kidsneedtoread.org/give_books.html" target="_blank" title="kidsneedtoread.org">Learn More</a></span>
+	</span>
+</button>
+
+        </div>
+        <div class="col-4" id="learn-button">
+          <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/059/953/original/8576.jpg?1671674838" alt="" class="person-icon">
+          <h4>Reader to Reader, INC</h4>
+           <button type="button" class="css-button">
+	<span class="css-button-icon">
+		<i class="fa fa-question-circle"></i>
+	</span>
+	<span class="css-button-text">
+		<span><a href="https://littlefreelibrary.org/map/" target="_blank" title="littlefreelibrary.org">Learn More</a></span>
+	</span>
+</button>
+        </div>
+        <div class="col-3"></div>
+        <div class="col-6 pt-5">
+          <h4 class="pb-4">"IF A BOOK IS IN GOOD CONDITION IT SHOULD BE DONATED TO AN ORGANIZATION THAT CATERS TO FACILITATING LITERACY IN COMMUNITY THAT ARE IN NEED." </h4>
+        </div>
+        <div class="col-3"></div>
+      </div>
+      <!-- donate close -->
+      <div class="row footer" id="footer">
+        <div class="col-12">
+          <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/059/954/original/190z_2112_w037_n003_49b_p1_49.jpg?1671675231" alt="" class="footer-img">
+        </div>
+        <div class="col-12 closing pt-3">
+          <footer>
+             <p class="typewrite" data-period="2000" data-type='[ "YOUR BOOKS CAN MAKE A DIFFERENCE TODAY" ]'>
+    <span class="wrap"></span>
+  </p>
+            <p class="reference-link"><a
+              href="https://www.freepik.com/free-vector/young-people-students-reading-books_23617166.htm#page=2&query=GROUP&position=48&from_view=author#position=48&page=2&query=GROUP"
+              class="reference-link">Images by upklyak</a>
+            on Freepik</p>
+            <p>GitHub</p>
+          </footer>
+        </div>
+      </div>
+      <!-- main container close -->
+    </div>
+    <!-- main container close -->
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+<script>
+var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+        var that = this;
+        var delta = 150 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+        document.body.appendChild(css);
+    };
+  </script>
+  </body>
+</html>
